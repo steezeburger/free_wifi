@@ -5,26 +5,21 @@
     $('.parallax').parallax();
     $('.modal-trigger').leanModal();
 
-    (function () {
-      var header = document.querySelector("#header");
-      if (window.location.hash) {
-        header.classList.add("slide--up");
+    $.simpleWeather({
+      location: 'Midtown, OKC',
+      woeid: '',
+      unit: 'f',
+      success: function (weather) {
+        html = '<h2><i class="icon-' + weather.code + '"></i> ' + weather.temp + '&deg;' + weather.units.temp + '</h2>';
+        html += '<li class="currently">' + weather.currently + '</li>';
+
+        $("#weather").html(html);
+      },
+      error: function (error) {
+        $("#weather").html('<p>' + error + '</p>');
       }
+    });
 
-      new Headroom(header, {
-        tolerance: {
-          down: 10,
-          up: 20
-        },
-        offset: 205,
-        classes: {
-          initial: "slide",
-          pinned: "slide--reset",
-          unpinned: "slide--up"
-        }
-      }).init();
-
-    }());
 
   }); // end of document ready
 })(jQuery); // end of jQuery name space
