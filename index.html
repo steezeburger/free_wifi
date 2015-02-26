@@ -7,8 +7,8 @@
   <title>OKG Free Wifi</title>
 
   <!-- CSS  -->
-  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
-  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="public/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="public/css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
 </head>
 
 <body>
@@ -18,21 +18,6 @@
     <div class="container">
       <div class="nav-wrapper"><a id="logo-container" href="#" class="brand-logo grey-text text-lighten-3 hide-on-med-and-up">OKG</a>
         <div class="nav-wrapper"><a id="logo-container" href="#" class="brand-logo grey-text text-lighten-3 hide-on-small-only">Oklahoma Gazette</a>
-          <ul class="right hide-on-med-and-down">
-            <li><a href="#" class="grey-text text-lighten-3">Events</a></li>
-            <li><a href="#" class="grey-text text-lighten-3">Food</a></li>
-            <li><a href="#" class="grey-text text-lighten-3">Music</a></li>
-            <li><a href="#" class="grey-text text-lighten-3">Lifestyle</a></li>
-          </ul>
-
-          <!-- Nav bar mobile-->
-          <ul id="nav-mobile" class="side-nav red darken-4">
-            <li><a href="#" class="grey-text text-lighten-4">Events</a></li>
-            <li><a href="#" class="grey-text text-lighten-4">Food</a></li>
-            <li><a href="#" class="grey-text text-lighten-4">Music</a></li>
-            <li><a href="#" class="grey-text text-lighten-4">Lifestyle</a></li>
-          </ul>
-          <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu grey-text text-lighten-3"></i></a>
         </div>
       </div>
     </div>
@@ -141,7 +126,7 @@ This agreement sets out the terms and conditions on which wireless internet acce
     </div>
     
     <div class="row center">
-      <a href="#" id="download-button" class="btn-large waves-effect waves-light red darken-4 grey-text text-lighten-3">Accept</a>
+      <a href="/views/portal.html" id="download-button" class="btn-large waves-effect waves-light red darken-4 grey-text text-lighten-3">Accept</a>
       <a href="#" id="download-button" class="btn-large waves-effect waves-light red darken-4 grey-text text-lighten-3">Decline</a>
     </div>
     <br>
@@ -193,8 +178,10 @@ This agreement sets out the terms and conditions on which wireless internet acce
 
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="js/materialize.js"></script>
-  <script src="js/init.js"></script>
+  <script src="public/js/materialize.js"></script>
+  <script src="public/js/init.js"></script>
+  <script src="public/js/headroom.js"></script>
+  <script src="public/js/jQuery.headroom.js"></script>
 
 </body>
 

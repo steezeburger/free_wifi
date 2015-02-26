@@ -128,3 +128,7 @@ ul.rig.columns-4 li {
 ul.rig li a h4 {
 	text-decoration: none;
 }
+
+/* Changes bg color of hover on mobile slide menu*/
+ul.side-nav li:hover, ul.side-nav li.active {
+      background-color: #000 !important; }
