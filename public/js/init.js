@@ -20,7 +20,10 @@
       }
     });
 
-    $('#fullpage').fullpage();
+    $('#fullpage').fullpage({
+      verticalCentered: true,
+      resize: true
+    });
 
 
   }); // end of document ready

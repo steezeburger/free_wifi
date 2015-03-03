@@ -178,3 +178,14 @@ html {
   font-family: "Gotham";
 }
 
+nav {
+  position: fixed;
+  z-index: 10000;
+  top: 0;
+  margin: auto;
+}
+
+.sponsors-main-page {
+  padding-top: 64px;
+}
+
