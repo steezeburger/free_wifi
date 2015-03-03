@@ -73,7 +73,7 @@ ul.rig li {
 ul.rig li img {
 	max-width: 70%;
 	height: auto;
-	margin: 0 0 10px;
+	margin: 0;
 }
 
 ul.rig li h3 {
@@ -107,7 +107,7 @@ ul.rig.columns-4 li {
 @media (max-width: 480px) {
 	ul.grid-nav li {
 		display: block;
-		margin: 0 0 5px;
+		margin: 0;
 	}
 	
 	ul.grid-nav li a {
@@ -121,7 +121,7 @@ ul.rig.columns-4 li {
 	ul.rig li {
 		width: 100% !important;
 	/* over-ride all li styles */
-		margin: 0 0 20px;
+		margin: 0;
 	}
 }
 
@@ -136,3 +136,13 @@ ul.side-nav li:hover, ul.side-nav li.active {
 .card-title:not('.main-ad') {
   text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.55);
 }
+
+/* Color changes */
+.red.darken-4 {
+  background-color: #C91832 !important; }
+
+.red-text.text-darken-4 {
+  color: #C91832 !important; }
+
+.red-text.text-darken-4 {
+  color: #C91832 !important; }

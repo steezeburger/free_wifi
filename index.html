@@ -8,6 +8,9 @@
 
   <!-- CSS  -->
   <link href="public/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="public/css/jquery.fullPage.css" type="text/css" rel="stylesheet" media="screen,projection" />
+
+  <!-- Custom CSS -->
   <link href="public/css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
 </head>
 
@@ -26,7 +29,7 @@
   <!-- Terms and Cond Modal Structure-->
   <div id="modal1" class="modal modal-fixed-footer" style="display: none; top: 0px;">
     <div class="modal-content">
-      <h4>Terms & Conditions</h4>
+      <h4 class="truncate">Terms & Conditions</h4>
       <p>
 This agreement sets out the terms and conditions on which wireless internet access (“the Service”) is provided [free of charge]1 to you, a [customer/guest] of [insert name of institution] (“us”) in consideration for your custom, your agreement to these terms and conditions and your agreement to allow us to send to you by e-mail our promotional and marketing material; 
 
@@ -96,13 +99,13 @@ This agreement sets out the terms and conditions on which wireless internet acce
     </div>
     <div class="modal-footer">
       <a href="#" class="waves-effect waves-green btn-flat modal-action modal-close">Disagree</a>
-      <a href="#" class="waves-effect waves-green btn-flat modal-action modal-close">Agree</a>
+      <a href="public/portal.html" class="waves-effect waves-green btn-flat modal-action modal-close">Agree</a>
     </div>
   </div>
   <!-- End T&C Modal Structure -->
 
+<!-- Sponsored by -->
   <div class="container">
-    <h3 class="header center red-text text-darken-2">Free Wifi by Oklahoma Gazette</h3>
     <div class="row center">
       <p class="grey-text">Sponsored by</p>
       <div class="sponsors-main-page">
@@ -114,26 +117,31 @@ This agreement sets out the terms and conditions on which wireless internet acce
         </ul>
       </div>
     </div>
+<!-- End Sponsors -->
     
+<!-- Accept/Decline btns and text    -->
     <div class="row center">
       <h5 class="header col s12 light red-text text-darken-4">You must first agree to our
          
       <div class="row center">
-        <a class="waves-effect waves-light btn modal-trigger red darken-2" href="#modal1">
+        <a class="waves-effect waves-light btn modal-trigger red darken-4 flow-text" href="#modal1">
             Terms &amp; Conditions</a>
         </div>
       </h5>  
     </div>
     
     <div class="row center">
-      <a href="public/portal.html" id="download-button" class="btn-large waves-effect waves-light red darken-4 grey-text text-lighten-3">Accept</a>
-      <a href="#" id="download-button" class="btn-large waves-effect waves-light red darken-4 grey-text text-lighten-3">Decline</a>
+      <a href="public/portal.html" class="btn-large waves-effect waves-light red darken-4 grey-text text-lighten-3">Accept</a>
+      <a href="#" class="btn-large waves-effect waves-light red darken-4 grey-text text-lighten-3">Decline</a>
     </div>
+
+
     <br>
     <br>
 
   </div>
 
+<!-- Footer -->
   <footer class="page-footer red darken-4">
     <div class="container">
       <div class="row">
@@ -170,7 +178,7 @@ This agreement sets out the terms and conditions on which wireless internet acce
     </div>
     <div class="footer-copyright">
       <div class="container right-align">
-        <a class="grey-text" href="http://tierramediagroup.com/">Copyright 2015 Tierra Media Inc. All rights reserved.</a>
+        <a class="grey-text" href="http://tierramediagroup.com/" target="_blank">Copyright 2015 &copy; Tierra Media Inc. All rights reserved.</a>
       </div>
     </div>
   </footer>
@@ -179,10 +187,10 @@ This agreement sets out the terms and conditions on which wireless internet acce
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="public/js/materialize.js"></script>
-  <script src="public/js/init.js"></script>
-  <script src="public/js/headroom.js"></script>
-  <script src="public/js/jQuery.headroom.js"></script>
+  <script src="public/js/jquery.fullPage.js"></script>
 
+  <!-- Custom Scripts -->
+  <script src="public/js/init.js"></script>
 </body>
 
 </html>
