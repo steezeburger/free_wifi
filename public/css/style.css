@@ -166,6 +166,7 @@ hr {
 /* Card and image stylings */
 .card {
   height: 70%;
+  margin: 0 auto;
 }
 .card-image {
   height: 80%;
