@@ -5034,8 +5034,8 @@ nav {
   color: #fff;
   background-color: #ee6e73;
   width: 100%;
-  height: 56px;
-  line-height: 56px; }
+  height: 65px;
+  line-height: 65px; }
   nav .nav-wrapper {
     position: relative;
     height: 100%; }
@@ -5059,7 +5059,7 @@ nav {
     color: #fff;
     display: inline-block;
     font-size: 2.1rem;
-    padding: 0; }
+    padding-top: 0; }
     @media only screen and (max-width : 992px) {
       nav .brand-logo {
         left: 0;
@@ -5131,8 +5131,8 @@ nav {
 
 @media only screen and (min-width : 601px) {
   nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
-    height: 64px;
-    line-height: 64px; }
+    height: 65px;
+    line-height: 65px; }
 
   nav .nav-wrapper i {
     font-size: 2rem; }

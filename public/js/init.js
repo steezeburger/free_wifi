@@ -1,10 +1,15 @@
 (function ($) {
   $(function () {
 
-    $('.button-collapse').sideNav();
-    $('.parallax').parallax();
+    // Side nav bar
+    $('.button-collapse').sideNav({
+      closeOnClick: true
+    });
+
+    // Modal init
     $('.modal-trigger').leanModal();
 
+    // Weather widget
     $.simpleWeather({
       location: 'Midtown, OKC',
       woeid: '',
@@ -20,6 +25,7 @@
       }
     });
 
+    // Fullpage init
     $('#fullpage').fullpage({
       verticalCentered: true,
       resize: true
