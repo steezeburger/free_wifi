@@ -27,6 +27,7 @@
 
     // Fullpage init
     $('#fullpage').fullpage({
+      autoScrolling: false,
       verticalCentered: true,
       resize: true
     });
