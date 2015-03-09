@@ -6,25 +6,12 @@
  * Made By MaterializeCSS.com
  */
 
-nav ul a,
-nav .brand-logo {
-  color: #444;
-}
-nav .brand-logo {
-  padding-top: 6px;
-}
-
-p {
-  line-height: 2rem;
-}
-
 .icon-block {
   padding: 0 15px;
 }
 
-
-footer.page-footer {
-  margin: 0;
+p {
+  line-height: 2rem;
 }
 
 /* Photo grid responsive stylings */
@@ -34,7 +21,6 @@ ul.rig {
 	margin-left: -2.5%;
 /* should match li left margin */
 }
-
 ul.rig li {
 	display: inline-block;
 	padding: 10px;
@@ -49,82 +35,60 @@ ul.rig li {
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 }
-
 ul.rig li img {
 	max-width: 70%;
 	height: auto;
 	margin: 0;
 }
-
 ul.rig li h3 {
 	margin: 0 0 5px;
 }
-
 ul.rig li p {
 	font-size: .9em;
 	line-height: 1.5em;
 	color: #999;
 }
-
 /* class for 2 columns */
 ul.rig.columns-2 li {
 	width: 47.5%;
 /* this value + 2.5 should = 50% */
 }
-
 /* class for 3 columns */
 ul.rig.columns-3 li {
 	width: 30.83%;
 /* this value + 2.5 should = 33% */
 }
-
 /* class for 4 columns */
 ul.rig.columns-4 li {
 	width: 22.5%;
 /* this value + 2.5 should = 25% */
 }
-
 @media (max-width: 480px) {
 	ul.grid-nav li {
 		display: block;
 		margin: 0;
 	}
-
 	ul.grid-nav li a {
 		display: block;
 	}
-
 	ul.rig {
 		margin-left: 0;
 	}
-
 	ul.rig li {
 		width: 100% !important;
 	/* over-ride all li styles */
 		margin: 0;
 	}
 }
-
 ul.rig li a h4 {
 	text-decoration: none;
-}
-
-/* Changes bg color of hover on mobile slide menu*/
-ul.side-nav li:hover, ul.side-nav li.active {
-      background-color: #000 !important; }
-
-/* No drop shadow on text of first card */
-.card-title:not(.main-ad) {
-  text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.55);
 }
 
 /* Color changes */
 .red.darken-4 {
   background-color: #C91832 !important; }
-
 .red-text.text-darken-4 {
   color: #C91832 !important; }
-
 .red-text.text-darken-4 {
   color: #C91832 !important; }
 
@@ -133,27 +97,22 @@ ul.side-nav li:hover, ul.side-nav li.active {
   font-family: "Gotham";
   src: url("../font/gotham/GothamHTF-Thin.otf");
   font-weight: 200; }
-
 @font-face {
   font-family: "Gotham";
   src: url("../font/gotham/GothamHTF-Light.otf");
   font-weight: 300; }
-
 @font-face {
   font-family: "Gotham";
   src: url("../font/gotham/GothamHTF-Book.otf");
   font-weight: 400; }
-
 @font-face {
   font-family: "Gotham";
   src: url("../font/gotham/GothamHTF-Medium.otf");
   font-weight: 500; }
-
 @font-face {
   font-family: "Gotham";
   src: url("../font/gotham/GothamHTF-Bold.otf");
   font-weight: 700; }
-
 html {
   font-family: "Gotham";
 }
@@ -167,12 +126,13 @@ nav {
   height: 65px;
   line-height: 65px;
 }
-
-.sponsors-main-page {
-  padding-top: 64px;
+nav .brand-logo {
+  padding-top: 6px;
 }
-
-/* Nav logos */
+/* Changes bg color of hover on mobile nav menu*/
+ul.side-nav li:hover, ul.side-nav li.active {
+      background-color: #000 !important; }
+/* Nav logos and side nav */
 .side-nav-logo {
   width: 200px;
   display: block;
@@ -186,7 +146,6 @@ nav {
   margin: 0 auto;
   padding-top: 15px;
 }
-
 hr {
   width: 90%;
 }
@@ -204,14 +163,22 @@ hr {
     border-color: transparent transparent transparent #9e9e9e;
 }
 
-
+/* Card and image stylings */
+.card {
+  height: 70%;
+}
 .card-image {
-  height: 75%;
+  height: 80%;
+  overflow: hidden;
 }
 .card-action {
-  height: 25%;
+  height: 20%;
+}
+.card img {
+  height: 100%;
+  width: auto;
 }
 
-img {
-  max-height: 450px;
+.sponsors-main-page {
+  padding-top: 64px;
 }
