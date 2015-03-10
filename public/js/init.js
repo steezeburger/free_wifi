@@ -10,6 +10,11 @@
       }
 
     });
+    // Scrolls to top on click
+    $('#toTop').click(function() {
+      $('html, body').animate({ scrollTop: 0}, 500);
+      return false;
+    })
 
     // Side nav bar
     $('.button-collapse').sideNav({
