@@ -164,21 +164,57 @@ hr {
 }
 
 /* Card and image stylings */
+/* Shorter images for small screens */
+@media screen and (max-width: 480px) {
+  .card-image img {
+    max-height: 300px;
+  }
+}
+
 .card {
   height: 70%;
   margin: 0 auto;
 }
 .card-image {
-  height: 80%;
+  height: 70%;
   overflow: hidden;
 }
 .card-content {
-  height: 20%;
+  height: 30%;
 }
-.card img {
+.card-image img {
+  display: block;
   height: 100%;
-  width: auto;
 }
+
+/* Form Colors */
+.input-field label {
+  color: #000;
+}
+/* label focus color */
+.input-field input[type=text]:focus + label {
+  color: #000;
+}
+/* label underline focus color */
+.input-field input[type=text]:focus {
+  border-bottom: 1px solid #000;
+  box-shadow: 0 1px 0 0 #000;
+}
+/* valid color */
+.input-field input[type=text].valid {
+  border-bottom: 1px solid #000;
+  box-shadow: 0 1px 0 0 #000;
+}
+/* invalid color */
+.input-field input[type=text].invalid {
+  border-bottom: 1px solid #000;
+  box-shadow: 0 1px 0 0 #000;
+}
+/* icon prefix focus color */
+.input-field .prefix.active {
+  color: #000;
+}
+
 
 .sponsors-main-page {
   padding-top: 64px;
