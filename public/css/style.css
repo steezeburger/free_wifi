@@ -215,6 +215,10 @@ hr {
   color: #000;
 }
 
+/* toTop button initially hidden */
+div#toTop {
+  display: none;
+}
 
 .sponsors-main-page {
   padding-top: 64px;

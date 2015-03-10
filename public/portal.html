@@ -70,198 +70,205 @@
     </div>
   </nav>
 
-  <!-- Body Content -->
-  <div id="fullpage" class="container">
-    <div class="row">
+  <!-- Floating top button  -->
+  <div id="toTop" class="fixed-action-btn" style="bottom: 45px; right: 24px;">
+    <a class="btn-floating btn-large red darken-4" href="#anchor-main">
+      <i class="large mdi-hardware-keyboard-arrow-up"></i>
+    </a>
+  </div>
 
-      <!-- TODO: Make main 'sweet deals' slider -->
-      <div class="col section" data-anchor="anchor-main">
+    <!-- Body Content -->
+    <div id="fullpage" class="container">
+      <div class="row">
 
-        <!-- Deal 1 of 3 -->
-        <div class="col s12 m12 slide" data-anchor="anchor-main1">
+        <!-- TODO: Make main 'sweet deals' slider -->
+        <div class="col section" data-anchor="anchor-main">
+
+          <!-- Deal 1 of 3 -->
+          <div class="col s12 m12 slide" data-anchor="anchor-main1">
+            <div class="card">
+              <div class="card-image small">
+                <img src="http://www.mcnelliesokc.com/images/data/attachments/0000/0184/Main_Page__2__mxw611_mxh411_e1.jpg?1315593935" alt="">
+                <span class="card-title">McNellie's</span>
+              </div>
+              <div class="card-content">
+                <a href="http://mcnelliesokc.com" target="_blank"><span class="grey-text">$3.50 Burger and Fries! 7-9 Every Wednesday</span></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Deal 2 of 3 -->
+          <div class="col s12 m12 slide" data-anchor="anchor-main2">
+            <div class="card">
+              <div class="card-image small">
+                <img src="http://www.fashionhomesales.com/wp-content/uploads/2012/07/Hermes-Scarves.jpg" alt="">
+                <span class="card-title">Shop Good</span>
+              </div>
+              <div class="card-content">
+                <a href="http://shopgoodokc.com" target="_blank"><span class="grey-text">End of season sale! 30-50% off cold weather clothing and accessories.</span></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Deal 3 of 3 -->
+          <div class="col s12 m12 slide" data-anchor="anchor-main3">
+            <div class="card">
+              <div class="card-image small">
+                <img src="http://static1.squarespace.com/static/53daad5ce4b0e202759f41a5/53fe0608e4b0826cfdf93358/53fe0612e4b0826cfdf9337e/1418430462690/brat.jpg?format=1500w" alt="">
+                <span class="card-title">Fassler Hall</span>
+              </div>
+              <div class="card-content">
+                <a href="http://fasslerhall.com" target="_blank"><span class="grey-text">Daily beer specials! All day, every day.</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Weather widget -->
+        <div class="col s12 m12 section" data-anchor="anchor-weather">
+          <div class="card">
+            <div class="card-content small">
+              <div class="input-field">
+                <form method="get" action="https://www.google.com/search">
+                  <label for="q">Google Search</label>
+                  <input type="text" name="q" size="" value="">
+                </form>
+              </div>
+            </div>
+
+            <div class="card-content">
+              <p>Current Local Weather</p>
+              <div id="weather" class="grey-text"></div>
+            </div>
+
+            <div class="card-content">
+              <p>OKG Twitter feed will go here</p>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Food -->
+        <div class="col s12 m12 section" data-anchor="anchor-food">
           <div class="card">
             <div class="card-image small">
               <img src="http://www.mcnelliesokc.com/images/data/attachments/0000/0184/Main_Page__2__mxw611_mxh411_e1.jpg?1315593935" alt="">
               <span class="card-title">McNellie's</span>
             </div>
             <div class="card-content">
-              <a href="http://mcnelliesokc.com" target="_blank"><span class="grey-text">$3.50 Burger and Fries! 7-9 Every Wednesday</span></a>
+              <a href="http://mcnelliesokc.com" target="_blank"><span class="grey-text">Check out our beer specials!</span></a>
             </div>
           </div>
         </div>
 
-        <!-- Deal 2 of 3 -->
-        <div class="col s12 m12 slide" data-anchor="anchor-main2">
+        <!-- Drinks -->
+        <div class="col s12 m12 section" data-anchor="anchor-drinks">
           <div class="card">
             <div class="card-image small">
-              <img src="http://www.fashionhomesales.com/wp-content/uploads/2012/07/Hermes-Scarves.jpg" alt="">
-              <span class="card-title">Shop Good</span>
+              <img src="http://www.outabroad.com/wp-content/uploads/2012/09/bar-drinks.jpg" alt="">
+              <span class="card-title">Bo Bandy's  Bar</span>
             </div>
             <div class="card-content">
-              <a href="http://shopgoodokc.com" target="_blank"><span class="grey-text">End of season sale! 30-50% off cold weather clothing and accessories.</span></a>
+              <a href="http://fasslerhall.com" target="_blank"><span class="grey-text">Come get a drink!</span></a>
             </div>
           </div>
         </div>
 
-        <!-- Deal 3 of 3 -->
-        <div class="col s12 m12 slide" data-anchor="anchor-main3">
+        <!-- Retail -->
+        <div class="col s12 m12 section" data-anchor="anchor-retail">
           <div class="card">
             <div class="card-image small">
-              <img src="http://static1.squarespace.com/static/53daad5ce4b0e202759f41a5/53fe0608e4b0826cfdf93358/53fe0612e4b0826cfdf9337e/1418430462690/brat.jpg?format=1500w" alt="">
-              <span class="card-title">Fassler Hall</span>
+              <img src="http://cdn.shopify.com/s/files/1/0622/4617/t/2/assets/slideshow_2.jpg?14520184363240231690" alt="">
+              <span class="card-title">Schlegle Bicycles</span>
             </div>
             <div class="card-content">
-              <a href="http://fasslerhall.com" target="_blank"><span class="grey-text">Daily beer specials! All day, every day.</span></a>
+              <a href="http://schlegelbicycles.com/" target="_blank"><span class="grey-text">Come check out our sweet deals on tires and more!</span></a>
             </div>
           </div>
         </div>
-      </div>
 
-      <!-- Weather widget -->
-      <div class="col s12 m12 section" data-anchor="anchor-weather">
-        <div class="card">
-          <div class="card-content small">
-            <div class="input-field">
-              <form method="get" action="https://www.google.com/search">
-                <label for="q">Google Search</label>
-                <input type="text" name="q" size="" value="">
-              </form>
+        <!-- Events -->
+        <div class="col s12 m12 section" data-anchor="anchor-events">
+          <div class="card">
+            <div class="card-image small">
+              <img src="http://www.oxfordkarma.com/wp-content/uploads/2015/03/broncho.jpg" alt="">
+              <span class="card-title">Broncho</span>
+            </div>
+            <div class="card-content">
+              <a href="http://fasslerhall.com" target="_blank"><span class="grey-text">Free all ages concert! 3/28 Door @ 6PM, Show @ 7PM</span></a>
             </div>
           </div>
-
-          <div class="card-content">
-           <p>Current Local Weather</p>
-            <div id="weather" class="grey-text"></div>
-          </div>
-
-          <div class="card-content">
-            <p>OKG Twitter feed will go here</p>
-          </div>
-
         </div>
-      </div>
 
-      <!-- Food -->
-      <div class="col s12 m12 section" data-anchor="anchor-food">
-        <div class="card">
-          <div class="card-image small">
-            <img src="http://www.mcnelliesokc.com/images/data/attachments/0000/0184/Main_Page__2__mxw611_mxh411_e1.jpg?1315593935" alt="">
-            <span class="card-title">McNellie's</span>
-          </div>
-          <div class="card-content">
-            <a href="http://mcnelliesokc.com" target="_blank"><span class="grey-text">Check out our beer specials!</span></a>
+        <!-- Living -->
+        <div class="col s12 m12 section" data-anchor="anchor-living">
+          <div class="card">
+            <div class="card-image small">
+              <img src="http://ad009cdnb.archdaily.net/wp-content/uploads/2012/09/5044cd9c28ba0d7ed1000148_the-abbotsford-warehouse-apartments-itn-architects_langridge_13-528x351.jpg" alt="">
+              <span class="card-title">Generic Apartment Complex</span>
+            </div>
+            <div class="card-content">
+              <a href="http://fasslerhall.com" target="_blank"><span class="grey-text">Come live here!</span></a>
+            </div>
           </div>
         </div>
-      </div>
 
-      <!-- Drinks -->
-      <div class="col s12 m12 section" data-anchor="anchor-drinks">
-        <div class="card">
-          <div class="card-image small">
-            <img src="http://www.outabroad.com/wp-content/uploads/2012/09/bar-drinks.jpg" alt="">
-            <span class="card-title">Bo Bandy's  Bar</span>
-          </div>
-          <div class="card-content">
-            <a href="http://fasslerhall.com" target="_blank"><span class="grey-text">Come get a drink!</span></a>
-          </div>
-        </div>
       </div>
-
-      <!-- Retail -->
-      <div class="col s12 m12 section" data-anchor="anchor-retail">
-        <div class="card">
-          <div class="card-image small">
-            <img src="http://cdn.shopify.com/s/files/1/0622/4617/t/2/assets/slideshow_2.jpg?14520184363240231690" alt="">
-            <span class="card-title">Schlegle Bicycles</span>
-          </div>
-          <div class="card-content">
-            <a href="http://schlegelbicycles.com/" target="_blank"><span class="grey-text">Come check out our sweet deals on tires and more!</span></a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Events -->
-      <div class="col s12 m12 section" data-anchor="anchor-events">
-        <div class="card">
-          <div class="card-image small">
-            <img src="http://www.oxfordkarma.com/wp-content/uploads/2015/03/broncho.jpg" alt="">
-            <span class="card-title">Broncho</span>
-          </div>
-          <div class="card-content">
-            <a href="http://fasslerhall.com" target="_blank"><span class="grey-text">Free all ages concert! 3/28 Door @ 6PM, Show @ 7PM</span></a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Living -->
-      <div class="col s12 m12 section" data-anchor="anchor-living">
-        <div class="card">
-          <div class="card-image small">
-            <img src="http://ad009cdnb.archdaily.net/wp-content/uploads/2012/09/5044cd9c28ba0d7ed1000148_the-abbotsford-warehouse-apartments-itn-architects_langridge_13-528x351.jpg" alt="">
-            <span class="card-title">Generic Apartment Complex</span>
-          </div>
-          <div class="card-content">
-            <a href="http://fasslerhall.com" target="_blank"><span class="grey-text">Come live here!</span></a>
-          </div>
-        </div>
-      </div>
-
     </div>
-  </div>
 
 
-  <!-- Footer -->
-  <div class="section no-pad">
-    <footer class="page-footer red darken-4">
-      <div class="container">
-        <div class="row">
-          <div class="col l6 s12">
-            <h5 class="grey-text text-lighten-3">Company Bio</h5>
-            <p class="grey-text text-lighten-3">Oklahoma Gazette’s mission is to stimulate, examine and inform the public on local quality-of-life issues and social needs, recognize community accomplishments and provide a forum for inspiration, participation and interaction across all media.</p>
+    <!-- Footer -->
+    <div class="section no-pad">
+      <footer class="page-footer red darken-4">
+        <div class="container">
+          <div class="row">
+            <div class="col l6 s12">
+              <h5 class="grey-text text-lighten-3">Company Bio</h5>
+              <p class="grey-text text-lighten-3">Oklahoma Gazette’s mission is to stimulate, examine and inform the public on local quality-of-life issues and social needs, recognize community accomplishments and provide a forum for inspiration, participation and interaction across all media.</p>
+            </div>
+
+            <div class="col l3 s12">
+              <h5 class="grey-text text-lighten-3">Settings</h5>
+              <ul>
+                <li><a class="grey-text text-lighten-3" href="#!">Wifi</a>
+                </li>
+                <li><a class="grey-text text-lighten-3" href="#!">Home Page</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col l3 s12">
+              <h5 class="grey-text text-lighten-3">Connect</h5>
+              <ul>
+                <li><a class="grey-text text-lighten-3" href="#!">About Gazette Media</a>
+                </li>
+                <li><a class="grey-text text-lighten-3" href="#!">Contact Us</a>
+                </li>
+                <li><a class="grey-text text-lighten-3" href="#!">Advertise</a>
+                </li>
+                <li><a class="grey-text text-lighten-3" href="#!">Privacy Policy</a>
+                </li>
+              </ul>
+            </div>
+
           </div>
-
-          <div class="col l3 s12">
-            <h5 class="grey-text text-lighten-3">Settings</h5>
-            <ul>
-              <li><a class="grey-text text-lighten-3" href="#!">Wifi</a>
-              </li>
-              <li><a class="grey-text text-lighten-3" href="#!">Home Page</a>
-              </li>
-            </ul>
-          </div>
-
-          <div class="col l3 s12">
-            <h5 class="grey-text text-lighten-3">Connect</h5>
-            <ul>
-              <li><a class="grey-text text-lighten-3" href="#!">About Gazette Media</a>
-              </li>
-              <li><a class="grey-text text-lighten-3" href="#!">Contact Us</a>
-              </li>
-              <li><a class="grey-text text-lighten-3" href="#!">Advertise</a>
-              </li>
-              <li><a class="grey-text text-lighten-3" href="#!">Privacy Policy</a>
-              </li>
-            </ul>
-          </div>
-
         </div>
-      </div>
-      <div class="footer-copyright">
-        <div class="container right-align">
-          <a class="grey-text" href="http://tierramediagroup.com/" target="_blank">Copyright 2015 Tierra Media Inc. All rights reserved.</a>
+        <div class="footer-copyright">
+          <div class="container right-align">
+            <a class="grey-text" href="http://tierramediagroup.com/" target="_blank">Copyright 2015 Tierra Media Inc. All rights reserved.</a>
+          </div>
         </div>
-      </div>
-    </footer>
-  </div>
+      </footer>
+    </div>
 
-  <!--  Scripts-->
-  <script src="https://code.jquery.com/jquery-2.1.3.js"></script>
-  <script src="js/materialize.js"></script>
-  <script src="js/jquery.simpleWeather.min.js"></script>
-  <script src="js/jquery.fullPage.js"></script>
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.3.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/jquery.simpleWeather.min.js"></script>
+    <script src="js/jquery.fullPage.js"></script>
 
-  <!-- Custom Scripts -->
-  <script src="js/init.js"></script>
+    <!-- Custom Scripts -->
+    <script src="js/init.js"></script>
 
 
 </body>

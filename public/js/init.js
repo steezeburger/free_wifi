@@ -1,6 +1,16 @@
 (function ($) {
   $(function () {
 
+    // Back to top button visible on scroll-down
+    $(window).scroll(function() {
+      if ($(this).scrollTop()) {
+        $('#toTop:hidden').stop(true, true).fadeIn();
+      } else {
+        $('#toTop').stop(true, true).fadeOut();
+      }
+
+    });
+
     // Side nav bar
     $('.button-collapse').sideNav({
       closeOnClick: true
