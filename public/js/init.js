@@ -16,6 +16,8 @@
       return false;
     })
 
+    // Scrollspy
+
     // Side nav bar
     $('.button-collapse').sideNav({
       closeOnClick: true
