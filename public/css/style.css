@@ -134,6 +134,13 @@ nav {
 nav .brand-logo {
   padding-top: 6px;
 }
+@media screen and (min-width: 1060px) {
+  nav .brand-logo::after {
+    content: "at Midtown";
+    font-size: 12px;
+  }
+}
+
 /* Changes bg color of hover on mobile nav menu*/
 ul.side-nav li:hover, ul.side-nav li.active {
       background-color: #000 !important; }
