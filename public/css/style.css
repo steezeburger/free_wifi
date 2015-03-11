@@ -125,6 +125,7 @@ nav {
   margin: auto;
   height: 65px;
   line-height: 65px;
+  overflow: hidden;
 }
 nav .brand-logo {
   padding-top: 6px;
