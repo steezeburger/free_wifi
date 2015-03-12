@@ -264,3 +264,11 @@ div#toTop {
 .sponsors-main-page {
   padding-top: 64px;
 }
+
+/* Weather Widget mobile style for short screens */
+@media screen and (max-height: 560px) {
+  #weather .currently {
+    position: relative;
+    top: -15px;
+  }
+}
