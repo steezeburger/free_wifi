@@ -196,7 +196,7 @@ hr {
   height: 70%;
   overflow: hidden;
 }
-.card-content {
+.card-content.deals {
   height: 30%;
 }
 .card-image img {
@@ -271,4 +271,10 @@ div#toTop {
     position: relative;
     top: -15px;
   }
+}
+
+/* Twitter timeline */
+.card-content .twitter-timeline {
+  height: 100%;
+  width: 100%;
 }
