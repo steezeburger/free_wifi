@@ -135,7 +135,7 @@ nav .brand-logo {
   padding-top: 6px;
 }
 @media screen and (min-width: 1060px) {
-  nav .brand-logo::after {
+  nav .portal.brand-logo::after {
     content: "at Midtown";
     font-size: 12px;
   }
