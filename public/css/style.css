@@ -272,3 +272,9 @@ div#toTop {
   height: 100%;
   width: 100%;
 }
+
+#toNext {
+  top: 90%;
+  right: 50%;
+  transform: translateX(50%);
+}

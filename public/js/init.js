@@ -1,8 +1,8 @@
 (function ($) {
   $(function () {
 
-    // Back to top button visible on scroll-down
-    $(window).scroll(function() {
+    // toTop button visible on scroll-down
+    $(window).scroll(function () {
       if ($(this).scrollTop()) {
         $('#toTop:hidden').stop(true, true).fadeIn();
       } else {
@@ -11,14 +11,18 @@
 
     });
     // Scrolls to top on click
-    $('#toTop').click(function() {
-      $('html, body').animate({ scrollTop: 0}, 500);
+    $('#toTop').click(function () {
+      $('html, body').animate({
+        scrollTop: 0
+      }, 500);
       return false;
     });
 
-    // Scrollspy
+    // TODO: Scrollspy
+    // Currently viewed section will be highlighted
+    // in nav bar
 
-    // Side nav bar
+    // Side nav bar initialization and options
     $('.button-collapse').sideNav({
       closeOnClick: true
     });
@@ -48,6 +52,22 @@
       verticalCentered: true,
       resize: true
     });
+
+    // toNext
+    $(window).scroll(function () {
+      if ($(this).scrollTop()) {
+        $('#toNext').stop(true, true).fadeOut();
+      } else {
+        $('#toNext:hidden').stop(true, true).fadeIn();
+      }
+
+    });
+
+    // Fullpage toNext button
+    $('#toNext').click(function () {
+      $.fn.fullpage.moveSectionDown();
+    });
+
 
 
   }); // end of document ready
